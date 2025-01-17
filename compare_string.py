@@ -3,7 +3,6 @@ from colors_text import bcolors
 
 
 def main():
-
     args_list = get_args()
 
     print("====================COMPARE TWO STRING====================")
@@ -33,7 +32,7 @@ def get_args():
 
     #proofs if there are more than 2 aguments
     if((len(sys.argv) == 2) or (len(sys.argv) > 3)):
-        print("Error: Too many or very few arguments")
+        print(bcolors.WARNING + "Error: Too many or very few arguments" + bcolors.ENDC)
         sys.exit(0)
 
     arg_list = [] #list of args
